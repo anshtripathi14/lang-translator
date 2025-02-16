@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #111211;
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+}
+body.light-mode {
+    background: rgb(242, 241, 241);
+    color: #000;
+}
+.translator-container {
+    background: #2d2d2e;
+    box-shadow: 0 4px 8px #fafafa;
+    border-radius: 10px;
+    padding: 25px;
+    width: 90%;
+    max-width: 500px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+    position: relative; 
+}
+body.light-mode .translator-container {
+    background: linear-gradient(#e5e4ef, rgb(243, 240, 240));
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    border: 1px solid black; 
+}
+.options-container {
+    display: flex;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 29px;
+}
+footer{
+    text-align: center;
+    margin: 10px 0;
+}
+select, textarea, button {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 11px;
+    font-size: 15px;
+    border: 1px solid #4f4e4e9f;
+    box-shadow: 0 4px 8px rgb(82, 82, 82);
+    border-radius: 5px;
+    transition: background-color 0.5s, color 0.5s;
+    color: #000;
+}
+textarea {
+    resize: none; 
+    height: 120px;
+    width: 95%; 
+    overflow-y: auto; 
+    transition: none; 
+}
+body.light-mode select, body.light-mode textarea, body.light-mode button {
+    background: #fafafa;
+    color: #000;
+}
+button {
+    background: rgb(2, 125, 2);
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px #111211;
+    border: none;
+}
+button:hover { 
+    background: #21a518; 
+}
+body.light-mode button:hover {
+    background: #e7e7f4; 
+    transition: background-color 0.3s ease; 
+}
+.reset-button {
+    background: rgb(160, 5, 5);
+    padding: 10px;
+    cursor: pointer;
+}
+.reset-button:hover {
+    background: rgb(215, 13, 13);
+}
+body.light-mode .reset-button:hover {
+    background: #f07951; 
+    transition: background-color 0.3s ease;
+}
+.loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #1637cb;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    position: absolute; 
+    display: none;
+}
+#imagePreview {
+    margin: 20px 0;
+    text-align: center;
+}
+#imagePreview img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.theme-toggle {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+}
+#themeButton {
+    background: transparent;
+    border: none;
+    font-size: 24px; 
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+    color: inherit; 
+}
+#themeButton:hover {
+    transform: rotate(5deg); 
+}
+.language-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.language-container select {
+    flex: 1;
+    width: auto;
+}
+#swapButton {
+    background: #f7f8fb;
+    color: rgb(18, 17, 17);
+    border: none;
+    border-radius: 5px;
+    padding: 11px;
+    cursor: pointer;
+    font-size: 15px;
+    box-shadow: 0 2px 4px #111211;
+}
+#swapButton:hover {
+    background: #bbc1e0;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
