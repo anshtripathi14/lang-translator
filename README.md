@@ -50,6 +50,7 @@ real-time-language-translator/
 
 ## Contributors
 Built with ❤️ by **Unilink**.
+By Puneet Sharma, Ansh Tripathi, Karamveer Yadav.
 
 ## License
 This project is licensed under the MIT License.
