@@ -1,5 +1,7 @@
 # Real-Time Language Translator
 
+# Live Preview: https://live-translator.netlify.app
+
 ## Overview
 The **Real-Time Language Translator** is a web-based application that enables users to translate text between multiple languages in real time. The project leverages the Google Translate API for text translation and integrates speech recognition, text-to-speech, and optical character recognition (OCR) for enhanced usability.
 
